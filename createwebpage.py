@@ -16,5 +16,5 @@ def create_indexpage(request):
     return f'Success!'
 
 if __name__ == "__main__":
-    hep=({"teksti": "Dogs sleep for an average of 10 hours per day.", "kuva": "https://random.dog/6edac66e-c0de-4e69-a9d6-b2e6f6f9001b.jpg"})
+    hep={"teksti": "Dogs sleep for an average of 10 hours per day.", "kuva": "https://random.dog/6edac66e-c0de-4e69-a9d6-b2e6f6f9001b.jpg"}
     create_indexpage(hep)
