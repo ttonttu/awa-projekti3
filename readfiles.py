@@ -15,8 +15,7 @@ def avaa_tiedostot(request):
     parametri_data_teksti = ""
     for d in sorted(tiedot_data, key=lambda x: x['fact']):
         parametri_data_teksti += d['fact']
-    
-    
+        
     tiedosto = urllib.request.urlopen("https://random.dog/woof.json")
     tiedot_data = json.loads(tiedosto.read())
     parametri_data_kuva = tiedot_data['url']
