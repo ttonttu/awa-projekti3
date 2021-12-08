@@ -1,7 +1,8 @@
 """into requirements.txt 
 pytest==5.4.2
 python-dotenv==0.17.1
-google-cloud-storage==1.43.0"""
+google-cloud-storage==1.43.0
+flask>=2.0.0"""
 
 import json
 import urllib.request
