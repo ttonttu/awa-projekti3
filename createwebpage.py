@@ -27,4 +27,3 @@ def create_indexpage(request):
     blob = bucket.blob("index.html")
 
     blob.upload_from_string(indexpage)
-    return f'Success!'
