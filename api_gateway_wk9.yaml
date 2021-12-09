@@ -1,0 +1,25 @@
+
+swagger: '2.0'
+info:
+  title: [API_ID]
+  description: start-workflow
+  version: 1.0.0
+ 
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+  /workflow_trigger:
+    post:
+      summary: trigger
+      operationId: start-workflow
+      x-google-backend:
+        address: https://[region]-[project_id].cloudfunctions.net/workflow-trigger
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string
+  
+
